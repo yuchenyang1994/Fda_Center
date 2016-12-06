@@ -1,7 +1,7 @@
 <template>
      <div id="classview">
         <div id="member">
-        
+
         </div>
         <div class="btn">
             <mt-button type="primary" size="large" @click.native="popMember">选择期货公司</mt-button>
@@ -9,13 +9,13 @@
 
         <mt-popup
             popup-transition="popup-fade"
-            v-model="popupVisible" 
+            v-model="popupVisible"
             position="bottom">
             <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
-            
+
         </mt-popup>
-        
-        
+
+
     </div>
 </template>
 
@@ -92,7 +92,7 @@ export default {
 
 
 
-            
+
         }, (response) => {
             console.log(response)
         });
@@ -102,8 +102,8 @@ export default {
         },(response)=>{
             console.log(response)
         })
-        
-        
+
+
 
     },
     methods:{
@@ -161,13 +161,13 @@ export default {
 
 
 
-            
+
         }, (response) => {
             console.log(response)
         });
 
-      
-             
+
+
         },
         popMember(e){
             this.popupVisible = true
@@ -182,10 +182,8 @@ export default {
         width:400px;
     }
 #member {
-        margin: 0 auto;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        width: 360px;
-        height: 500px;
+    margin: 0 auto;
+    width: 280px;
+    height: 400px;
     }
 </style>

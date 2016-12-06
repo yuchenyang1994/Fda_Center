@@ -1,7 +1,7 @@
 <template>
     <div class="view">
         <div id="curr">
-        
+
         </div>
         <div class="btn">
             <mt-button type="primary" size="large" @click.native="popOptions">选择类型</mt-button>
@@ -9,15 +9,15 @@
 
         <mt-popup
             popup-transition="popup-fade"
-            v-model="popupVisible" 
+            v-model="popupVisible"
             position="bottom">
             <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
-            
+
         </mt-popup>
-        
-        
+
+
     </div>
-    
+
 </template>
 
 <script>
@@ -79,7 +79,7 @@ export default {
                     ]
             })
             this.currCharts.hideLoading();
-            
+
         },(response)=>{
             console.log(response)
         })
@@ -127,7 +127,7 @@ export default {
                                 ]
                         })
                         this.currCharts.hideLoading();
-                        
+
                     },(response)=>{
                         console.log(response)
                     });
@@ -248,8 +248,8 @@ export default {
                     });
                     break;
 
-                
-                
+
+
 
 
             }
@@ -261,7 +261,7 @@ export default {
     }
 
 }
-    
+
 </script>
 
 <style>
@@ -270,9 +270,7 @@ export default {
     }
     #curr {
         margin: 0 auto;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        width: 360px;
-        height: 500px;
+        width: 280px;
+        height: 400px;
     }
 </style>

@@ -11,5 +11,14 @@ export default {
 </script>
 
 <style>
+body{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40px;
+  bottom: 55px;
+}
 
 </style>

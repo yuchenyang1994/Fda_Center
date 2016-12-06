@@ -8,29 +8,17 @@ export default{
     tooltip:{
         trigger:'axis'
     },
-    dataZoom: [
-        {
-            top:'63%',
-            type: 'slider',
-            start: 0,
-            end: 100
-        },
-    ],
     legend:{
+        show:false,
         top:'4%',
         data:[]
     },
     grid:{
-		top:'70%',
+		    top:'20%',
         left:'1%',
         right:'1%',
-        bottom:0,
+        bottom:'20%',
         containLabel:true
-    },
-    toolbox:{
-        feature:{
-            saveAsImage:{}
-        }
     },
     xAxis:{
         type:'category',

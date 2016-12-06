@@ -1,7 +1,7 @@
 <template>
     <div id="con">
         <!--主要内容-->
-        <mt-tab-container swipeable v-model="selected">
+        <mt-tab-container id="container" swipeable v-model="selected">
             <mt-tab-container-item id="curr">
                 <CurrView></CurrView>
             </mt-tab-container-item>
@@ -35,7 +35,7 @@
             </mt-tab-item>
         </mt-tabbar>
     </div>
-    
+
 </template>
 
 <script>
@@ -52,9 +52,12 @@
         components: {CurrView, PositionView,MemberView,About}
     }
 
-    
+
 </script>
 
 <style>
-
+#container{
+  height: 100%;
+  width: 100%;
+}
 </style>

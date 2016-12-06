@@ -1,23 +1,20 @@
 <template>
    <div class="view">
         <div id="position">
-        
-        </div>
-        <div class="btn">
-            <mt-button type="primary" size="large" @click.native="popSymbol">选择品种</mt-button>
-        </div>
 
+        </div>
+          <mt-button type="primary" size="large" @click.native="popSymbol">选择品种</mt-button>
         <mt-popup
             popup-transition="popup-fade"
-            v-model="popupVisible" 
+            v-model="popupVisible"
             position="bottom">
             <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
-            
+
         </mt-popup>
-        
-        
+
+
     </div>
-  
+
 </template>
 
 <script>
@@ -57,7 +54,7 @@ export default {
                 };
                 myseries.push(Interest);
             }
-            
+
             for (let i=0; i<=memberlist.length;i++){
                 if (i < 3) {
                     selected[memberlist[i]] = true;
@@ -102,15 +99,10 @@ export default {
 </script>
 
 <style>
-    .btn{
-        margin-top:7%;
-    }
     #position {
-        margin: 0 auto;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        width: 360px;
-        height: 500px;
+      margin: 0 auto;
+      width: 280px;
+      height: 400px;
 
     }
 
