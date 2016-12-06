@@ -12,7 +12,7 @@
                 <MemberView></MemberView>
             </mt-tab-container-item>
             <mt-tab-container-item id="about">
-                <h1>i am yuchenyang</h1>
+                <About></About>
             </mt-tab-container-item>
         </mt-tab-container>
         <!--选项卡-->
@@ -42,13 +42,14 @@
     import CurrView from '../components/CurrView.vue'
     import PositionView from '../components/PositionView.vue'
     import MemberView from '../components/MemberView.vue'
+    import About from '../components/AboutView.vue'
     export default {
         data (){
             return {
                 selected:'curr'
             }
         },
-        components: {CurrView, PositionView,MemberView}
+        components: {CurrView, PositionView,MemberView,About}
     }
 
     

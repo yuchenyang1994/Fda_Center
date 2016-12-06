@@ -1,8 +1,6 @@
 <template>
   <div id="home">
     <mt-header fixed title="FDA数据中心">
-      <mt-button icon="back" slot="left"></mt-button>
-      <mt-button slot="right">我得github</mt-button>
     </mt-header>
     <tab></tab>
   </div>
