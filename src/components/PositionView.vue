@@ -1,9 +1,9 @@
 <template>
-   <div id="position-view">
+   <div class="view">
         <div id="position">
         
         </div>
-        <div id="position-btn-warp">
+        <div class="btn">
             <mt-button type="primary" size="large" @click.native="popSymbol">选择品种</mt-button>
         </div>
 
@@ -102,6 +102,9 @@ export default {
 </script>
 
 <style>
+    .btn{
+        margin-top:7%;
+    }
     #position {
         margin: 0 auto;
         margin-top: 35px;

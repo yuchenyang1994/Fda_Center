@@ -1,9 +1,9 @@
 <template>
-    <div id="curr-warp">
+    <div class="view">
         <div id="curr">
         
         </div>
-        <div id="curr-btn-warp">
+        <div class="btn">
             <mt-button type="primary" size="large" @click.native="popOptions">选择类型</mt-button>
         </div>
 
@@ -266,7 +266,7 @@ export default {
 
 <style>
     .slot2{
-        width:400px;
+        width:476px;
     }
     #curr {
         margin: 0 auto;

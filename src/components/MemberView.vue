@@ -1,9 +1,9 @@
 <template>
-     <div id="member-view">
+     <div id="classview">
         <div id="member">
         
         </div>
-        <div id="member-btn-warp">
+        <div class="btn">
             <mt-button type="primary" size="large" @click.native="popMember">选择期货公司</mt-button>
         </div>
 
